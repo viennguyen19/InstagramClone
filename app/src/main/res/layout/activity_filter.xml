@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="395dp"
+        android:layout_height="250dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/filterSubmitButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/round_rectangle"
+        android:text="submit"
+        android:theme="@style/FlatButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/blueMessButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_rectangle"
+        android:text="blue mess"
+        android:theme="@style/FlatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+    <Button
+        android:id="@+id/starlitButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_rectangle"
+        android:text="star lit"
+        android:theme="@style/FlatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueMessButton" />
+
+    <Button
+        android:id="@+id/awestruckButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_rectangle"
+        android:text="awestruck"
+        android:theme="@style/FlatButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/starlitButton"
+        app:layout_constraintEnd_toStartOf="@+id/starlitButton" />
+
+    <Button
+        android:id="@+id/limeStutterButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/round_rectangle"
+        android:text="lime stutter"
+        android:theme="@style/FlatButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/blueMessButton"
+        app:layout_constraintStart_toEndOf="@+id/blueMessButton" />
+
+    <Button
+        android:id="@+id/nightWhisperButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/round_rectangle"
+        android:text="night whisper"
+        android:theme="@style/FlatButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/starlitButton"
+        app:layout_constraintStart_toEndOf="@+id/starlitButton" />
+
+    <Button
+        android:id="@+id/originalButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/round_rectangle"
+        android:text="original"
+        android:theme="@style/FlatButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/blueMessButton"
+        app:layout_constraintEnd_toStartOf="@+id/blueMessButton" />
+
+
+</android.support.constraint.ConstraintLayout>
